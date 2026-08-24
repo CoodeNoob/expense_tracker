@@ -9,46 +9,33 @@ import Topbar from "./components/Topbar/Topbar";
 import Layout from "./components/Layout/Layout";
 
 function App() {
-  const { isAuthenticated } = useAuth();
+  // const { isAuthenticated } = useAuth();
 
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route
-    //       path="/login"
-    //       element={
-    //         isAuthenticated ? (
-    //           <Navigate to="/dashboard" />
-    //         ) : (
-    //           <LoginPage />
-    //         )
-    //       }
-    //     />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/login"
+          element={
+            <LoginPage/>
+          }
+        />
 
-    //     <Route
-    //       path="/dashboard"
-    //       element={
-    //         isAuthenticated ? (
-    //           <Dashboard />
-    //         ) : (
-    //           <Navigate to="/dashboard" />
-    //         )
-    //       }
-    //     />
+        <Route
+          path="/dashboard"
+          element={
+            <Layout children={<Dashboard/>}/>
+          }
+        />
 
-    //     <Route
-    //       path="*"
-    //       element={
-    //         <Navigate
-    //           to={isAuthenticated ? "/dashboard" : "/dashboard"}
-    //         />
-    //       }
-    //     />
-    //   </Routes>
-    // </BrowserRouter>
-    // <Dashboard/>
-    // <Sidebar/>
-    <Layout/>
+        <Route
+          path="*"
+          element={
+            <Dashboard/>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

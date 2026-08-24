@@ -3,8 +3,8 @@
   --muted: #6a7875;
   --line: #dce5e1;
   --canvas: #f7faf8;
-  --forest: #135d50;
-  --forest-dark: #0e493f;
+  --forest: #373737;
+  --forest-dark: #262626;
   display: grid;
   min-height: 100vh;
   color: var(--ink);
