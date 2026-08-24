@@ -8,7 +8,7 @@
   display: grid;
   min-height: 100vh;
   color: var(--ink);
-  /* font-family: "DM Sans", sans-serif; */
+  /* font-family: "DM Sans", sans-serif;  */
 }
 
 .login-panel {
