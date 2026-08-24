@@ -1,0 +1,28 @@
+.app-layout {
+  display: flex;
+  min-height: 100dvh;
+}
+
+.layout-content {
+  width: 100%;
+  min-width: 0;
+  padding: 16px 16px 16px 0;
+}
+
+.layout-page-content {
+  margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+  .app-layout {
+    display: block;
+  }
+
+  .layout-content {
+    padding: 0 12px 12px;
+  }
+
+  .layout-page-content {
+    margin-top: 12px;
+  }
+}

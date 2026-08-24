@@ -5,6 +5,8 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 
 import { useAuth } from "./context/AuthContext";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Topbar from "./components/Topbar/Topbar";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   const { isAuthenticated } = useAuth();
@@ -45,7 +47,8 @@ function App() {
     //   </Routes>
     // </BrowserRouter>
     // <Dashboard/>
-    <Sidebar/>
+    // <Sidebar/>
+    <Layout/>
   );
 }
 
