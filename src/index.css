@@ -3,6 +3,7 @@
 :root{
   --app-background: #0A0A0A;
   --text-color: #F5F5F5;
+  --card-background:linear-gradient(145deg, rgba(31, 31, 34, 0.98), rgba(18, 18, 20, 0.98));
 }
 
 body

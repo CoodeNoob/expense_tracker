@@ -1,10 +1,6 @@
 import "./Topbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBell,
-  faChevronDown,
-  faEllipsis,
-  faMagnifyingGlass,
   faUser
 } from "@fortawesome/free-solid-svg-icons";
 
