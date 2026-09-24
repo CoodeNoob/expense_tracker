@@ -2,6 +2,11 @@ import './Dashboard.css'
 import CategoryUsedTable from './CategoryUsedTable/CategoryUsedTable'
 
 function Dashboard() {
+  let amount = 10000;  
+
+
+  let formatCurrency = (amt) => amt.toLocaleString('en-US', { style: 'currency', currency: 'INR' });
+
   return (
     <div className='content'>
       <h1 className="dashboard-greeting">Hello, Swan Htet</h1>
@@ -11,7 +16,7 @@ function Dashboard() {
             Balance
           </div>
           <div className="card_status">
-            ₹ 100
+            {formatCurrency(amount)}
           </div>
         </div>
         <div className="card">
@@ -60,7 +65,7 @@ function Dashboard() {
               +
           </div>
           <div className="action_name">
-              Add Expense
+              Add Depense
           </div>
         </div>
       </div>

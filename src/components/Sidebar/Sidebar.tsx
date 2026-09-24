@@ -8,6 +8,7 @@ import {
   faArrowLeft,
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -57,12 +58,13 @@ function Sidebar() {
 
       <ul className="action_menu_list">
         <li>
-          <button className="action" type="button" aria-label="Logout" title="Logout">
+          
+          <Link to="/login" className="action" type="button" aria-label="Logout" title="Logout">
             <span className="action_icon" aria-hidden="true">
               <FontAwesomeIcon icon={faArrowRightFromBracket} />
             </span>
             <span className="action_name">Logout</span>
-          </button>
+          </Link>
         </li>
       </ul>
     </aside>

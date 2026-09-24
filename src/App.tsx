@@ -7,9 +7,13 @@ import { useAuth } from "./context/AuthContext";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Topbar from "./components/Topbar/Topbar";
 import Layout from "./components/Layout/Layout";
+import { useEffect } from "react";
+import axios from "axios";
+import api from "./utility/api";
 
 function App() {
   // const { isAuthenticated } = useAuth();
+  // there is also nested routes
 
   return (
     <BrowserRouter>
@@ -31,7 +35,7 @@ function App() {
         <Route
           path="*"
           element={
-            <Dashboard/>
+            <Navigate to={"/login"}/>
           }
         />
       </Routes>
